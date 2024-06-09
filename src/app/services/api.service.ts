@@ -9,7 +9,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class ApiService {
 
-  private apiUrl = 'http://222.252.98.195:9002';
+  private apiUrl = 'http://localhost:9002';
   private token = 'Rt8cUR8iH4q8RF4hOUK4vEBop0ramhQg';
   
   constructor(private http: HttpClient, private router: Router, private cookieService: CookieService) {}
