@@ -1,0 +1,51 @@
+      .layout{
+        height: 100vh;
+        padding: 0;
+        background-color: #fff;
+      }
+      .logo {
+        padding-left: 8px;
+        // width: 120px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.2);
+        // margin: 16px 30px 16px 0;
+        float: left;
+        .title{
+          align-items: center;
+    color: #0040ff;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+        }
+      }
+
+      .header-menu {
+        line-height: 64px;
+      }
+
+      .sider-menu {
+        height: 100%;
+        border-right: 0;
+      }
+
+      .inner-layout {
+        // padding: 0 24px 24px;
+      }
+
+      nz-header {
+        background: #fff;
+        padding: 0;
+        border: 1px solid #0000000d;
+      }
+      .ant-layout-content{
+        background: #fff;
+        border-left: 1px solid #0000000d;
+    }
+    .ant-pagination-prev{
+      border: none !important;
+      
+  }

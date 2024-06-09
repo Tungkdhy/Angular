@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .content{
+        width: 25%;
+        // height: 80%;
+        border: 1px solid #bdb1b1;
+        border-radius: 4px;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        .login-form{
+            width: 100%;
+        }
+        .title{
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 12px;
+        }
+    }
+}

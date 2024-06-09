@@ -1,0 +1,33 @@
+<div class="content">
+    <div class="title">Quản trị dịch vụ</div>
+    
+    <nz-table #basicTable [nzData]="listOfData">
+        <thead>
+          <tr>
+            <th style="background-color: #f7f8fc;border: none;">STT</th>
+             <th style="background-color: #f7f8fc;border: none;">Tên dịch vụ</th>
+             <th style="background-color: #f7f8fc;border: none;">Chất lượng ảnh</th>
+             <th style="background-color: #f7f8fc;border: none;">Thời gian lưu trữ</th>
+             <th style="background-color: #f7f8fc;border: none;">Thời gian bắt đầu</th>
+             <th style="background-color: #f7f8fc;border: none;">Trạng thái gia hạn</th>
+             <th style="background-color: #f7f8fc;border: none;">Tổng tiền</th>
+             <th style="background-color: #f7f8fc;border: none;">Trạng thái</th>
+             <th style="background-color: #f7f8fc;border: none;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of basicTable.data">
+            <td>{{ data.stt }}</td>
+            <td>{{ data.name }}</td>
+            <td>{{ data.resolution }}</td>
+            <td>{{ data.name }}</td>
+            <td>{{ data.age }}</td>
+            <td>{{ data.address }}</td>
+            <td>
+              1.000.000 đ
+              <!-- <nz-divider nzType="vertical"></nz-divider> -->
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+</div>

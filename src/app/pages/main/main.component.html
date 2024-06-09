@@ -1,0 +1,67 @@
+<nz-layout  class="layout">
+  <nz-header class="header" nzTheme="white">
+    <div class="logo">
+      <img src="../assets/images/logo.png" width="36px" height="36px"/>
+      <span class="title">Hệ thống quản trị VNS CamAI</span>
+    </div>
+    <div class="logo">
+      <img src="../assets/images/logo.png" width="14px" height="14px"/>
+      <span class="title">Trân Tung</span>
+    </div>
+  </nz-header>
+  <nz-layout>
+    <nz-sider nzWidth="270px" nzTheme="light">
+      <ul nz-menu nzMode="inline" class="sider-menu">
+        <li nz-submenu nzOpen nzIcon="ng-zorro:antd" nzTitle="Cảnh báo thông minh">
+          <ul>
+            <li nz-menu-item nzSelected>Quản lý chung</li>
+            <li nz-menu-item>Phát hiện chuyển động</li>
+            <li nz-menu-item>Phát hiện camera dịch chuyển</li>
+            <li nz-menu-item>option4</li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Nhận diện khuôn mặt" nzIcon="laptop">
+          <ul>
+            <li nz-menu-item>option5</li>
+            <li nz-menu-item>option6</li>
+            <li nz-menu-item>option7</li>
+            <li nz-menu-item>option8</li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Nhận dạng biển số" nzIcon="notification">
+          <ul>
+            <li nz-menu-item>option9</li>
+            <li nz-menu-item>option10</li>
+            <li nz-menu-item>option11</li>
+            <li nz-menu-item>option12</li>
+          </ul>
+        </li>
+        <li nz-menu-item>
+          <span nz-icon nzType="desktop"></span>
+          <span>Đối soát camera</span>
+        </li>
+        <li nz-submenu nzTitle="Quản trị camera" nzIcon="notification">
+          <ul>
+            <li nz-menu-item>option9</li>
+            <li nz-menu-item>option10</li>
+            <li nz-menu-item>option11</li>
+            <li nz-menu-item>option12</li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Lịch sử" nzIcon="notification">
+          <ul>
+            <li nz-menu-item>option9</li>
+            <li nz-menu-item>option10</li>
+            <li nz-menu-item>option11</li>
+            <li nz-menu-item>option12</li>
+          </ul>
+        </li>
+      </ul>
+    </nz-sider>
+    <nz-layout class="inner-layout">
+      <nz-content>
+        <router-outlet></router-outlet>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>
