@@ -28,6 +28,9 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { CsrftokenInterceptorService } from './csrftoken-interceptor.service';
+import { CookieService } from 'ngx-cookie-service';
 
 registerLocaleData(en);
 
@@ -36,7 +39,8 @@ registerLocaleData(en);
     AppComponent,
     HomeComponent,
     MainComponent,
-    LoginComponent
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -57,13 +61,20 @@ registerLocaleData(en);
     NzFormModule,
     NzGridModule,
     NzInputModule,
-    NzButtonModule
+    NzButtonModule,
+    
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
+    CookieService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: HttpInterceptorService ,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: CsrftokenInterceptorService ,
       multi: true
     }
   ],
